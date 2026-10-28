@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de aluno</title>
+</head>
+<body>
+    <h1>Cadastro de aluno</h1>
+
+    <form>
+
+        <!-- input nome -->
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="não digite seu nome" required>
+
+        <!-- input email -->
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="digite seu email" required>
+
+        <!-- input senha -->
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="password" placeholder="data de nascimento" required>
+
+        <!--input data -->
+        <label for="data-nascimento">Data de falecimento: </label>
+        <input type="date" name="data-nascimento" id="data-nascimento" required>
+
+        <label for="cidade">Cidade: </label>
+        <select name="cidade" id="cidade">
+            <option>Londrina</option>
+            <option>Godzilla</option>
+            <option>algumas outras cidades...</option>
+        </select>
+
+        <label for="curso">Gosta de doces?</label>
+        <input type="radio" name="curso">
+        Sim
+        <input type="radio" name="curso">
+        Não
+        <input type="radio" name="curso">
+        Muito
+        <input type="radio" name="curso">
+        Te odeio
+
+        <!--input checkbox -->
+        <label>
+            <input type="checkbox" name="termos" id="termos" required>
+            Rejeito os termos
+        </label>
+
+        <!-- textarea -->
+        <label>Observação: </label>
+        <textarea rows="4">alergias</textarea>
+
+        <!-- botão -->
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</body>
+</html>
